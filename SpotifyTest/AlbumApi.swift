@@ -12,10 +12,12 @@ import SwiftyJSON
 
 class AlbumApi {
     
+    // MARK: - Singelton
     static let sharedInstance:AlbumApi = AlbumApi()
     
     private init() {}
     
+    // MARK: - ApiMethods
     func getAlbum(artistId:String,_ completion: @escaping ( _ albums: [Album]? ) -> () ) -> Void  {
         
         var albums = [Album]()

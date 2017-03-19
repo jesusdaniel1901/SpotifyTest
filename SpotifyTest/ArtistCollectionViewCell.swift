@@ -10,6 +10,7 @@ import UIKit
 
 class ArtistCollectionViewCell: UICollectionViewCell {
     
+    // MARK: IBOutlets    
     @IBOutlet weak var artistImage: UIImageView!    
     @IBOutlet weak var artistName: UILabel!
 }

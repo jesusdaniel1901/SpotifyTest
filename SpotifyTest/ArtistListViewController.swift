@@ -11,7 +11,7 @@ import SDWebImage
 
 class ArtistListViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     
-    // MARK: Outlets
+    // MARK: IBOutlets
     @IBOutlet weak var artistCollectionView: UICollectionView!
     
     // MARK: Properties

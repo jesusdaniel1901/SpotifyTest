@@ -12,10 +12,12 @@ import SwiftyJSON
 
 class ArtistApi {
     
+    // MARK: - Singelton
     static let sharedInstance:ArtistApi = ArtistApi()
     
     private init() {}
     
+    // MARK: - ApiMethods    
     func getArtisit(query:String,_ completion: @escaping ( _ artists: [Artist]? ) -> () ) -> Void  {
         
         let params: jsonDictionary = ["q": query, "type": "artist"]    
