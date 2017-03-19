@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artist cell" id="6Zh-y5-P9C" customClass="ArtistCollectionViewCell" customModule="SpotifyTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spotify" translatesAutoresizingMaskIntoConstraints="NO" id="hYp-Z1-hGq">
+                        <rect key="frame" x="40" y="8" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hYp-Z1-hGq" secondAttribute="height" multiplier="1:1" id="Ay1-ih-LkR"/>
+                            <constraint firstAttribute="height" constant="70" id="z28-J8-2to"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PO-TN-Pyc">
+                        <rect key="frame" x="8" y="80" width="134" height="62"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="6PO-TN-Pyc" firstAttribute="leading" secondItem="6Zh-y5-P9C" secondAttribute="leading" constant="8" id="Sgf-Xk-yQJ"/>
+                <constraint firstItem="6PO-TN-Pyc" firstAttribute="centerX" secondItem="hYp-Z1-hGq" secondAttribute="centerX" id="YGc-iQ-nyg"/>
+                <constraint firstItem="6PO-TN-Pyc" firstAttribute="top" secondItem="hYp-Z1-hGq" secondAttribute="bottom" constant="2" id="jBp-zs-gel"/>
+                <constraint firstItem="hYp-Z1-hGq" firstAttribute="top" secondItem="6Zh-y5-P9C" secondAttribute="top" constant="8" id="kzD-LM-vJ7"/>
+                <constraint firstItem="hYp-Z1-hGq" firstAttribute="centerX" secondItem="6Zh-y5-P9C" secondAttribute="centerX" id="rqm-Nx-W84"/>
+                <constraint firstAttribute="bottom" secondItem="6PO-TN-Pyc" secondAttribute="bottom" constant="8" id="sVX-Fx-d93"/>
+                <constraint firstAttribute="trailing" secondItem="6PO-TN-Pyc" secondAttribute="trailing" constant="8" id="wAc-L4-exU"/>
+            </constraints>
+            <size key="customSize" width="163" height="218"/>
+            <connections>
+                <outlet property="artistImage" destination="hYp-Z1-hGq" id="kIg-IP-MgJ"/>
+                <outlet property="artistName" destination="6PO-TN-Pyc" id="E34-0k-jeM"/>
+            </connections>
+            <point key="canvasLocation" x="-211" y="-16"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="spotify" width="150" height="150"/>
+    </resources>
+</document>
